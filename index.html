@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
     <title>Give us the details</title>
 </head>
 
@@ -19,28 +20,193 @@
 <div class="grid-system">
 <!-- Welcome Blurb -->
 
-<div class="blurb"><h1>Bonglords Longboards</h1>Order Form </div>
-<form action="/action_page.php">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <label for="type">What type of board do you want shaped?</label>
+<div class="blurb"><h1>Bonglords Longboards</h1>Order Form: </div>
+
+<!--<form action="/action_page.php">
+        
+        <input type="submit" value="Submit">
+        
+      </form>-->
+      <div class="dropdown-2">
+        <form action="#">
+
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+        <label for="dims">Type of Board</label>
+        <select name="Width" id="width">
+            <option value="Shortboard">Shortboard</option>
+            <option value="Longobard">Longboard</option>
+        </select><br><br>
+
+         <label for="dims">Construction</label>
+         <select name="Width" id="width">
+            <option value="PU">PU</option>
+            <option value="Epoxy">Epoxy</option>
+           
+         </select><br><br>
+            
+            <label for="dims">Length</label>
+          <select name="Width" id="width">
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+          </select><br><br>
+
+          <label for="dims">Width  </label>
+          <select name="Width" id="width">
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+          </select><br><br>
+
+          <label for="dims">Thickness  </label>
+          <select name="Width" id="width">
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+          </select><br><br>
+
+          <label for="dims">Colour</label>
+          <select name="Width" id="width">
+            <option value="Clear Coat">Clear Coat</option>
+            <option value="White">White</option>
+            <option value="Black">Black</option>
+            <option value="Blue">Blue</option>
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Gold">Gold</option>
+            <option value="Custom">Custom</option>
+          </select><br><br>
+
+            <label for="Finish">Finish</label>
+          <select name="Width" id="width">
+            <option value="Matt">Matt</option>
+            <option value="Gloss">Gloss</option>
+          
+          </select><br><br>
+          <input type="submit" value="Submit" />
+        </form>
+     </div>
+
+
+
+        <!--<label for="type">What type of board do you want shaped?</label>
         <input type="button" id="btype" name="btype"
         value="Shortboard">
         <input type="button" id="btype2" name="btype2"
-        value="Longboard">
+        value="Longboard"><br>
         
         <label for="type">What length?</label>
         <input type="button" id="btype" name="btype"
         value="Shortboard">
+        
         <p>Dims: Length - Width - Thickness. Drop down menu.</p>
         <p>Colour. drop down menu</p>
         <p>Construction - Glassing, EPS or PU blank, finish - matt or gloss. </p>
         <p>Logos</p>
         <br><br><input type="submit" value="Submit">
         
-      </form> 
+      </form> -->
+
+      <!-- <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <button>9'0</button>
+          <button>9'1</button>
+          <button>9'2</button>
+        </div>
+      </div> -->
+
+      <!--<div class="dropdown-2">
+        <form action="#">
+            <label for="dims">Type of Board</label>
+          <select name="Width" id="width">
+            <option value="Shortboard">Shortboard</option>
+            <option value="Longobard">Longboard</option>
+          </select><br><br>
+
+          <label for="dims">Construction</label>
+          <select name="Width" id="width">
+            <option value="PU">PU</option>
+            <option value="Epoxy">Epoxy</option>
+           
+          </select><br><br>
+            
+            <label for="dims">Length</label>
+          <select name="Width" id="width">
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+          </select><br><br>
+
+          <label for="dims">Width  </label>
+          <select name="Width" id="width">
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+          </select><br><br>
+
+          <label for="dims">Thickness  </label>
+          <select name="Width" id="width">
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+          </select><br><br>
+
+          <label for="dims">Colour</label>
+          <select name="Width" id="width">
+            <option value="Clear Coat">Clear Coat</option>
+            <option value="White">White</option>
+            <option value="Black">Black</option>
+            <option value="Blue">Blue</option>
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Gold">Gold</option>
+            <option value="Custom">Custom</option>
+          </select><br><br>
+
+            <label for="Finish">Finish</label>
+          <select name="Width" id="width">
+            <option value="Matt">Matt</option>
+            <option value="Gloss">Gloss</option>
+          
+          </select><br><br>
+          <input type="submit" value="Submit" />
+        </form>
+     </div>-->
 
 </div>
 

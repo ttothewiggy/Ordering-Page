@@ -118,6 +118,64 @@ form {
   font-size: 28px;
 }
 
+/* Drpodown Menus */
+
+.dropbtn {
+  
+
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+
+.dropdown-content button {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 170px;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+.dropdown-2{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  width: 400px;
+  margin-top: -5em;
+}
+
 /* ---Footer---*/
 
 footer {
