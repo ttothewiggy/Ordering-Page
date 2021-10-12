@@ -71,49 +71,6 @@ a:active {
   font-size: 18px;
 }
 
-/*--- DropDown ---*/
-
-.dropbtn {
-  background-color: black;
-  color: white;
-  padding: 18px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #385c82;
-}
-
 /* --- Grid System --- */
 
 .grid-system {
@@ -122,7 +79,7 @@ a:active {
   grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
   height: 1080px;
 
-  background-image: url(images/b&wsurfer.jpg);
+  background-image: url(images/b&wshort.jpg);
   background-size: 1920px 1080px, cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -137,6 +94,7 @@ body {
   font-family: "Lustria", serif;
   font-size: 16px;
   min-height: 100vh;
+  color: white;
 }
 
 .blurb {
@@ -147,6 +105,7 @@ body {
 
   font-size: 32px;
   margin-left: 0.5em;
+  color: white;
 }
 
 form {
@@ -167,6 +126,7 @@ footer {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   height: 300px;
   margin-top: 0px;
+  color: black;
 }
 
 .map {
