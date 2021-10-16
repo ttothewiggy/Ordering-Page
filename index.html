@@ -26,30 +26,32 @@
         
         <input type="submit" value="Submit">
         
-      </form>-->
+      </form      -->
+
+      <!-- This is the beginning of the form. The class "dropdown2" wraps everything. Maybe wrap each question in the form in a div? -->
       <div class="dropdown-2">
-        <form action="#">
+        <form id="form-user" action="#" method="post">
 
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <label for="input-first">First name:</label><br>
+            <input type="text" id="fname" name="fname" autofocus placeholder="First Name"><br>
 
-        <label for="dims">Type of Board</label>
-        <select name="Width" id="width">
+            <label for="input-last">Last name:</label><br>
+            <input type="text" id="lname" name="lname" autofocus placeholder="Last Name"><br><br>
+
+        <label for="input-type">Type of Board</label>
+        <select name="input-type" id="input-type">
             <option value="Shortboard">Shortboard</option>
             <option value="Longobard">Longboard</option>
         </select><br><br>
 
-         <label for="dims">Construction</label>
-         <select name="Width" id="width">
+         <label for="input-construction">Construction</label>
+         <select name="input-construction" id="input-construction">
             <option value="PU">PU </option>
             <option value="Epoxy">Epoxy (+$200)</option>
-           
          </select><br><br>
             
-            <label for="dims">Length</label>
-          <select name="Width" id="width">
+            <label for="input-length">Length</label>
+          <select name="input-length" id="input-length">
             <option value="17">17</option>
             <option value="18">18</option>
             <option value="19">19</option>
@@ -60,8 +62,8 @@
             <option value="24">24</option>
           </select><br><br>
 
-          <label for="dims">Width  </label>
-          <select name="Width" id="width">
+          <label for="input-width">Width  </label>
+          <select name="input-width" id="input-width">
             <option value="17">17</option>
             <option value="18">18</option>
             <option value="19">19</option>
@@ -72,8 +74,8 @@
             <option value="24">24</option>
           </select><br><br>
 
-          <label for="dims">Thickness  </label>
-          <select name="Width" id="width">
+          <label for="input-thickness">Thickness  </label>
+          <select name="input-thickness" id="input-thickness">
             <option value="17">17</option>
             <option value="18">18</option>
             <option value="19">19</option>
@@ -84,8 +86,8 @@
             <option value="24">24</option>
           </select><br><br>
 
-          <label for="dims">Colour</label>
-          <select name="Width" id="width">
+          <label for="input-colour">Colour</label>
+          <select name="input-colour" id="input-colour">
             <option value="Clear Coat">Clear Coat</option>
             <option value="White">White</option>
             <option value="Black">Black</option>
@@ -96,117 +98,17 @@
             <option value="Custom">Custom (+$200)</option>
           </select><br><br>
 
-            <label for="Finish">Finish</label>
-          <select name="Width" id="width">
+            <label for="input-finish">Finish</label>
+          <select name="input-finish" id="input-finish">
             <option value="Matt">Matt</option>
             <option value="Gloss">Gloss (+$100)</option>
           
           </select><br><br>
-          <input type="submit" value="Submit" />
+          <button id="button-cancel">Cancel</button>
+          <button id="button-send">Send</button>
+
         </form>
      </div>
-
-
-
-        <!--<label for="type">What type of board do you want shaped?</label>
-        <input type="button" id="btype" name="btype"
-        value="Shortboard">
-        <input type="button" id="btype2" name="btype2"
-        value="Longboard"><br>
-        
-        <label for="type">What length?</label>
-        <input type="button" id="btype" name="btype"
-        value="Shortboard">
-        
-        <p>Dims: Length - Width - Thickness. Drop down menu.</p>
-        <p>Colour. drop down menu</p>
-        <p>Construction - Glassing, EPS or PU blank, finish - matt or gloss. </p>
-        <p>Logos</p>
-        <br><br><input type="submit" value="Submit">
-        
-      </form> -->
-
-      <!-- <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-        <div id="myDropdown" class="dropdown-content">
-          <button>9'0</button>
-          <button>9'1</button>
-          <button>9'2</button>
-        </div>
-      </div> -->
-
-      <!--<div class="dropdown-2">
-        <form action="#">
-            <label for="dims">Type of Board</label>
-          <select name="Width" id="width">
-            <option value="Shortboard">Shortboard</option>
-            <option value="Longobard">Longboard</option>
-          </select><br><br>
-
-          <label for="dims">Construction</label>
-          <select name="Width" id="width">
-            <option value="PU">PU</option>
-            <option value="Epoxy">Epoxy</option>
-           
-          </select><br><br>
-            
-            <label for="dims">Length</label>
-          <select name="Width" id="width">
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-          </select><br><br>
-
-          <label for="dims">Width  </label>
-          <select name="Width" id="width">
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-          </select><br><br>
-
-          <label for="dims">Thickness  </label>
-          <select name="Width" id="width">
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-          </select><br><br>
-
-          <label for="dims">Colour</label>
-          <select name="Width" id="width">
-            <option value="Clear Coat">Clear Coat</option>
-            <option value="White">White</option>
-            <option value="Black">Black</option>
-            <option value="Blue">Blue</option>
-            <option value="Red">Red</option>
-            <option value="Green">Green</option>
-            <option value="Gold">Gold</option>
-            <option value="Custom">Custom</option>
-          </select><br><br>
-
-            <label for="Finish">Finish</label>
-          <select name="Width" id="width">
-            <option value="Matt">Matt</option>
-            <option value="Gloss">Gloss</option>
-          
-          </select><br><br>
-          <input type="submit" value="Submit" />
-        </form>
-     </div>-->
 
 </div>
 
