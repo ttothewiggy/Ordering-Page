@@ -56,19 +56,36 @@ const send = function(ev){
   }
 }
 
-/* function for validation */
+/* function for order box */
+
+function printOrder(){
+
+  let first = document.getElementById("fname").value;
+  let email = document.getElementById("email").value;
+  let type = document.getElementById("input-type").value;
+  let last = document.getElementById("lname").value;
+  let length = document.getElementById("length").value;
+  let width = document.getElementById("input-width").value;
+  let thickness = document.getElementById("input-thickness").value;
+  
+
+  let orderText = `Thank you ${first} ${last}. Your order for a ${type} is being sent to the shaper. We'll contact you via ${email} with any further questions. `;
+  let boardDims = `The dimensions of your board are ${length} x ${width} x ${thickness}. `
+//Running to check whether it's working
+  console.log(orderText, boardDims)
+//once i got the consolelog printing I added this to print the message to the order box. 
+  document.getElementById("order-box").innerHTML = orderText + boardDims;
+  
+}
+
 
 
 const validate = function(ev){
   let valid = false;
 
   let first = document.getElementById("input-first");
-  if (Selection.selectedIndex === 0){
-    failures.push({input:"input-first", msg:"Please enter a name"})
-  }
-
-
   let last = document.getElementById("input-last");
+  let email = document.getElementById("input-email");
   let type = document.getElementById("input-type");
   let construction = document.getElementById("input-construction");
   let length = document.getElementById("input-length");

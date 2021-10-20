@@ -10,6 +10,10 @@ h3 {
   font-size: 10px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /*--- Buttons --- */
 
 button {
@@ -71,13 +75,14 @@ a:active {
   font-size: 18px;
 }
 
-/* --- Flex System --- */
+/* --- Grid System --- */
 
 .grid-system {
-  display: flex;
-  flex-direction: column;
-  flex-flow: column;
-  flex-shrink: 1;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+
   height: 1080px;
 
   background-image: url(images/b&wshort.jpg);
@@ -99,6 +104,11 @@ body {
 }
 
 .blurb {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+
   font-size: 32px;
   margin-left: 1em;
   margin-bottom: 1em;
@@ -160,8 +170,32 @@ form {
 }
 
 .dropdown-2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
   width: 400px;
-  margin-left: 4em;
+  margin-top: 5em;
+}
+
+/* ---Order Box---*/
+
+#order-box {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding-top: 5em;
+
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  text-align: center;
+
+  height: 600px;
+  width: 400px;
+  border: 2px solid white;
+  margin-top: 6em;
 }
 
 /* ---Footer---*/
