@@ -22,12 +22,6 @@
 
 <div class="blurb"><h1>Bonglords Longboards</h1>Order Form: </div>
 
-<!--<form action="/action_page.php">
-        
-        <input type="submit" value="Submit">
-        
-      </form      -->
-
       <!-- This is the beginning of the form. The class "dropdown2" wraps everything. Maybe wrap each question in the form in a div? -->
       <div class="dropdown-2">
         <form id="form-user" action="#" method="post">
@@ -38,10 +32,13 @@
             <label for="input-last">Last name:</label><br>
             <input type="text" id="lname" name="lname" autofocus placeholder="Last Name"><br><br>
 
+            <label for="input-email">Email:</label><br>
+            <input type="text" id="email" name="email" autofocus placeholder="Email"><br><br>
+
         <label for="input-type">Type of Board</label>
         <select name="input-type" id="input-type">
             <option value="Shortboard">Shortboard</option>
-            <option value="Longobard">Longboard</option>
+            <option value="Longboard">Longboard</option>
         </select><br><br>
 
          <label for="input-construction">Construction</label>
@@ -51,7 +48,7 @@
          </select><br><br>
             
             <label for="input-length">Length</label>
-          <select name="input-length" id="input-length">
+          <select name="input-length" id="length">
             <option value="9'6">9'6"</option>
             <option value="9'5">9'5"</option>
             <option value="9'4">9'4"</option>
@@ -114,12 +111,13 @@
             <option value="Gloss">Gloss (+$100)</option>
           
           </select><br><br>
-          <button id="button-cancel">Cancel</button>
-          <button id="button-send">Send</button>
+         
 
         </form>
+        <button id="button-cancel">Cancel</button>
+          <button id="button-send" onclick="printOrder()">Send</button>
      </div>
-
+<div id="order-box"> </div>
 </div>
 
 <footer>
